@@ -16,10 +16,10 @@
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-				<field name="serverUrl" type="text" label="Limbo Media Server's URL"/>
-				<field name="adminUsername" type="text" label="Limbo Media Server's Username (ROLE_ADMINISTRATION)"/>
-				<field name="adminPass" type="password" label="Limbo Media Server's Password (ROLE_ADMINISTRATION)"/>
-				<field name="authorities" type="textarea" default="ROLE_READ" description="You can add more authorities rights. Should be comma (,) separated" label="Default Authorities"/>
+				<field name="serverUrl" type="text" description="Insert Your Limbo Media Server address with port. Example: http://localhost:8000" label="Limbo Media Server's URL"/>
+				<field name="adminUsername" type="text" description="You will need insert one username that has ROLE_ADMINISTRATION privilege  " label="Limbo Media Server's Username (ROLE_ADMINISTRATION)"/>
+				<field name="adminPass" type="password" description="Password of that username"  label="Limbo Media Server's Password (ROLE_ADMINISTRATION)"/>
+				<field name="authorities" type="textarea" default="ROLE_READ" description="You can add more authorities rights. Should be comma (,) separated. Example: ROLE_READ,ROLE_ADMINISTRATION" label="Default Authorities"/>
 			</fieldset>
 		</fields>
 	</config>
