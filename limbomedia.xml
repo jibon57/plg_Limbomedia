@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" method="upgrade" type="plugin" group="user">
+	<name>Limbomedia</name>
+	<creationDate>2015-06-05</creationDate>
+	<author>Jibon Lawrence Costa</author>
+	<authorEmail>jiboncosta57@gmail.com</authorEmail>
+	<authorUrl>http://extensions.hoicoimasti.com/</authorUrl>
+	<copyright>Copyright (C) 2015 Jibon Lawrence Costa Open Source Matters. All rights reserved.</copyright>	
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1</version>
+	<description>Integrate Limbo Media Server with your Joomla site</description>
+	<files>
+		<filename plugin="limbomedia">limbomedia.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="serverUrl" type="text" label="Limbo Media Server's URL"/>
+				<field name="adminUsername" type="text" label="Limbo Media Server's Username (ROLE_ADMINISTRATION)"/>
+				<field name="adminPass" type="password" label="Limbo Media Server's Password (ROLE_ADMINISTRATION)"/>
+				<field name="authorities" type="textarea" default="ROLE_READ" description="You can add more authorities rights. Should be comma (,) separated" label="Default Authorities"/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
