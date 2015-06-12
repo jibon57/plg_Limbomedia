@@ -90,7 +90,7 @@ class plgUserLimbomedia extends JPlugin
 	protected function readcookies()
 	{		
 		$file = dirname ( __FILE__ ).DIRECTORY_SEPARATOR."cookie.txt";		
-		$myfile = fopen($file, "r") or die("Unable to open file!");
+		$myfile = fopen($file, "r");
 		$contents = fread($myfile, filesize($file));		
 		fclose($myfile);
 		preg_match("/JSESSIONID(.*)/", $contents, $match);
